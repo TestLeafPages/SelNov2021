@@ -4,7 +4,6 @@ package week2.day1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -66,6 +65,7 @@ public class Login {
 		Select dd = new Select(ele);
 		dd.selectByVisibleText("Employee");
 		
+	
 		//12_ Click Create Lead Button
 		driver.findElement(By.name("submitButton")).click();
 		
